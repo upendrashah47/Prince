@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#828282</color>
+    <color name="colorGreylight">#30828282</color>
+    <color name="colorChocolateHint">#c7c7cd</color>
+    <color name="colorDarkGrey">#444444</color>
+
+    <!-- === Application all colors === -->
+    <color name="colorPocketBlue">#2250C3</color>
+    <color name="colorExpertOrange">#FC9020</color>
+    <color name="colorExpertOrangeSelection">#fcb162</color>
+
+    <!-- === LOGIN ===-->
+    <color name="colorLightWhite">#F7F6F6</color>
+    <color name="colorFbBlue">#2662BE</color>
+    <color name="colorFbBlueSelection">#6791d1</color>
+    <color name="colorTextBoxIconBg">#EEEEEE</color>
+    <color name="colorTextBoxBorder">#FAFAFA</color>
+    <color name="colorTextBoxHint">#A5A5A5</color>
+    <color name="colorLoginButton">#444444</color>
+    <color name="colorLoginButtonSelection">#7c7c7c</color>
+
+    <!-- === Dashboard ==== -->
+    <color name="colorRed">#e50000</color>
+    <color name="colorRedSelection">#ff4c4c</color>
+</resources>

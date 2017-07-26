@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Prince</string>
+
+    <!-- Alert -->
+    <string name="Alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancelUpper">CANCEL</string>
+    <string name="message">Message</string>
+    <string name="connectionErrorMessage">Pocket Experts is experiencing a connection error</string>
+    <string name="internetConnection">Internet Connection</string>
+    <string name="doYouWantToExit">Do you want to exit?</string>
+    <string name="exit">Exit</string>
+
+    <!-- Local storage Provide -->
+    <string name="internal_storage">Internal Storage</string>
+
+</resources>
