@@ -18,6 +18,7 @@
 
     <!-- Login -->
     <string name="loginWithFB">Login With Facebook</string>
+    <string name="loginWithGoogle">Login With Google</string>
     <string name="yourEmail">Your Email</string>
     <string name="yourPassword">Your Password</string>
     <string name="contributor">Contributor</string>

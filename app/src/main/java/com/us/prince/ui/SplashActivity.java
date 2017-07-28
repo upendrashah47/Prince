@@ -97,6 +97,7 @@ public class SplashActivity extends BaseActivity {
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(android.os.Message msg) {
+
 //            syncAPI();
             if (Pref.getValue(context, Config.PREF_IS_LOGIN, 0) == 1) {
                 Intent intent = new Intent(context, HomeActivity.class);

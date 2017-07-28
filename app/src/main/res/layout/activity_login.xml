@@ -143,7 +143,6 @@
                 android:layout_width="@dimen/fbButton"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="5dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/rectangle_blue"
                 android:gravity="center"
@@ -153,12 +152,28 @@
                 android:textAllCaps="true" />
 
             <com.us.prince.uc.EspTextView
+                android:id="@+id/txtLoginWithGmail"
+                style="@style/whiteExtraMediumText"
+                android:layout_width="@dimen/fbButton"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangle_red"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="100"
+                android:text="@string/loginWithGoogle"
+                android:textAllCaps="true" />
+
+
+            <com.us.prince.uc.EspTextView
                 android:id="@+id/txtForgotPassword"
                 style="@style/blueExtraMediumText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="25dp"
                 android:gravity="center"
                 android:tag="100"
                 android:text="@string/forgotPass" />
@@ -168,7 +183,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:tag="100"
                 android:text="@string/wouldYouLikeToRegister" />
@@ -179,8 +194,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
                 android:gravity="center"
+                android:padding="5dp"
                 android:tag="100"
                 android:text="@string/registerHere" />
         </LinearLayout>

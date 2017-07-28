@@ -5,7 +5,7 @@ import com.google.firebase.crash.FirebaseCrash;
 
 public class Log {
     /* Logging and Console */
-    public static boolean DO_SOP = false;
+    public static boolean DO_SOP = true;
     public static String WHICH_HOST = "";
 
     public static void print(String mesg) {
