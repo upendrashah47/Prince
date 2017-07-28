@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:shrinkMode="strict">
+    <dimen name="smallText">12sp</dimen>
+    <dimen name="extraMediumText">14sp</dimen>
+    <dimen name="mediumText">16dp</dimen>
+    <dimen name="doubleMediumText">18sp</dimen>
+    <dimen name="largeText">20sp</dimen>
+    <dimen name="largeMediumText">24sp</dimen>
+
+    <!-- Login -->
+    <dimen name="fbButton">180sp</dimen>
+    <dimen name="loginTopBoxHeight">190sp</dimen>
+
+    <!-- Select Plan-->
+    <dimen name="subscribeButton">120sp</dimen>
+
+    <!-- Circle Size -->
+    <dimen name="circleSize">60sp</dimen>
+
+    <!-- Ratingbar Size -->
+    <dimen name="minHeight">22dip</dimen>
+
+    <!-- Add Update Delete Button -->
+    <dimen name="saveContinue">130sp</dimen>
+
+    <!-- Meeting Buttons Attend, Edit, Delete -->
+    <dimen name="aedButton">65sp</dimen>
+
+    <!-- Expand view height -->
+    <dimen name="expandFirstViewHeight">60sp</dimen>
+    <dimen name="expandSecondViewHeight">60sp</dimen>
+
+</resources>

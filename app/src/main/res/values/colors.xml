@@ -9,10 +9,10 @@
     <color name="colorGreylight">#30828282</color>
     <color name="colorChocolateHint">#c7c7cd</color>
     <color name="colorDarkGrey">#444444</color>
+    <color name="colorBlue">#2250C3</color>
+    <color name="colorOrange">#FC9020</color>
 
     <!-- === Application all colors === -->
-    <color name="colorPocketBlue">#2250C3</color>
-    <color name="colorExpertOrange">#FC9020</color>
     <color name="colorExpertOrangeSelection">#fcb162</color>
 
     <!-- === LOGIN ===-->

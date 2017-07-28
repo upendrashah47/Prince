@@ -16,4 +16,23 @@
     <!-- Local storage Provide -->
     <string name="internal_storage">Internal Storage</string>
 
+    <!-- Login -->
+    <string name="loginWithFB">Login With Facebook</string>
+    <string name="yourEmail">Your Email</string>
+    <string name="yourPassword">Your Password</string>
+    <string name="contributor">Contributor</string>
+    <string name="login">LOGIN</string>
+    <string name="forgotPass">Forgot Your Password?</string>
+    <string name="wouldYouLikeToRegister">Would you like to register?</string>
+    <string name="registerHere">Register Here</string>
+    <string name="validemail">Email cannot be blank</string>
+    <string name="invalidEmail">Please enter valid email</string>
+    <string name="invalidEmailLength">Email must not exceed 100 characters</string>
+    <string name="validblankpassword">Password cannot be blank</string>
+    <string name="invalidnewpasswordlength">Password must be of 8&#8211;20 characters long</string>
+    <string name="chooseYourType">Choose Your Type</string>
+    <string name="usernameCharacterAllow">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.</string>
+    <string name="emailCharacterAllow">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.-_@</string>
+    <string name="bioCharacterAllow">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890,.! ?:-</string>
+
 </resources>

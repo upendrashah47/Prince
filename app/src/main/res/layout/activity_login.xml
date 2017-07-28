@@ -1,6 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightWhite">
 
-</LinearLayout>
+    <!-- ========  TOP PART FACEBOOK LOGIN =========== -->
+    <RelativeLayout
+        android:id="@+id/relTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginTopBoxHeight"
+        android:background="@color/colorLightWhite">
+
+
+    </RelativeLayout>
+
+    <!-- ====== CENTER PART INCLUDING TEXT FIELDS AND LOGIN BUTTONS ======== -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relTop"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <!-- ========= EMAIL =========== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_edittext">
+
+                <RelativeLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/rectangle_edittext_icn_placer">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/email" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-1dp"
+                    android:background="@color/colorTextBoxHint" />
+
+                <com.us.prince.uc.EspEditText
+                    android:id="@+id/edtEmail"
+                    style="@style/darkGreyExtraMediumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:digits="@string/emailCharacterAllow"
+                    android:hint="@string/yourEmail"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:tag="100"
+                    android:textColorHint="@color/colorTextBoxHint" />
+            </LinearLayout>
+            <!-- ========= Password =========== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_edittext">
+
+                <RelativeLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/rectangle_edittext_icn_placer">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/star" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-1dp"
+                    android:background="@color/colorTextBoxHint" />
+
+                <com.us.prince.uc.EspEditText
+                    android:id="@+id/edtPassword"
+                    style="@style/darkGreyExtraMediumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/yourPassword"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:tag="100"
+                    android:textColorHint="@color/colorTextBoxHint" />
+            </LinearLayout>
+
+            <com.us.prince.uc.EspTextView
+                android:id="@+id/txtLogin"
+                style="@style/whiteExtraMediumText"
+                android:layout_width="@dimen/fbButton"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rectangle_login"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="100"
+                android:text="@string/login" />
+
+            <com.us.prince.uc.EspTextView
+                android:id="@+id/txtLoginWithFb"
+                style="@style/whiteExtraMediumText"
+                android:layout_width="@dimen/fbButton"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectangle_blue"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="100"
+                android:text="@string/loginWithFB"
+                android:textAllCaps="true" />
+
+            <com.us.prince.uc.EspTextView
+                android:id="@+id/txtForgotPassword"
+                style="@style/blueExtraMediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:tag="100"
+                android:text="@string/forgotPass" />
+
+            <com.us.prince.uc.EspTextView
+                style="@style/darkGreyExtraMediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:tag="100"
+                android:text="@string/wouldYouLikeToRegister" />
+
+            <com.us.prince.uc.EspTextView
+                android:id="@+id/txtRegisterHere"
+                style="@style/orangeExtraMediumText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:tag="100"
+                android:text="@string/registerHere" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

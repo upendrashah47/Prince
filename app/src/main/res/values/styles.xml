@@ -8,4 +8,109 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Dark Grey-->
+    <style name="darkGreyMediumText">
+        <item name="android:textSize">@dimen/mediumText</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+    <style name="darkGreyExtraMediumText">
+        <item name="android:textSize">@dimen/extraMediumText</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+    <style name="darkGreySmallText">
+        <item name="android:textSize">@dimen/smallText</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+    <style name="darkGreyDoubleMediumText">
+        <item name="android:textSize">@dimen/doubleMediumText</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+    <style name="darkGreyLargeText">
+        <item name="android:textSize">@dimen/largeText</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+    <!-- White-->
+    <style name="whiteMediumText">
+        <item name="android:textSize">@dimen/mediumText</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="whiteExtraMediumText">
+        <item name="android:textSize">@dimen/extraMediumText</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="whiteSmallText">
+        <item name="android:textSize">@dimen/smallText</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="whiteDoubleMediumText">
+        <item name="android:textSize">@dimen/doubleMediumText</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="whiteLargeText">
+        <item name="android:textSize">@dimen/largeText</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <!-- Blue-->
+    <style name="blueMediumText">
+        <item name="android:textSize">@dimen/mediumText</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="blueExtraMediumText">
+        <item name="android:textSize">@dimen/extraMediumText</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="blueSmallText">
+        <item name="android:textSize">@dimen/smallText</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="blueDoubleMediumText">
+        <item name="android:textSize">@dimen/doubleMediumText</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="blueLargeText">
+        <item name="android:textSize">@dimen/largeText</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <!-- Orange-->
+    <style name="orangeMediumText">
+        <item name="android:textSize">@dimen/mediumText</item>
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="orangeExtraMediumText">
+        <item name="android:textSize">@dimen/extraMediumText</item>
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="orangeSmallText">
+        <item name="android:textSize">@dimen/smallText</item>
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="orangeDoubleMediumText">
+        <item name="android:textSize">@dimen/doubleMediumText</item>
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="orangeLargeText">
+        <item name="android:textSize">@dimen/largeText</item>
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+
 </resources>
