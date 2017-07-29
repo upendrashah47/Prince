@@ -8,7 +8,7 @@
 
     <!-- Login -->
     <dimen name="fbButton">180sp</dimen>
-    <dimen name="loginTopBoxHeight">180sp</dimen>
+    <dimen name="topBoxHeight">180sp</dimen>
 
     <!-- Select Plan-->
     <dimen name="subscribeButton">120sp</dimen>

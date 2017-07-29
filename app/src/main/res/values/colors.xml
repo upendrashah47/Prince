@@ -29,4 +29,7 @@
     <!-- === Dashboard ==== -->
     <color name="colorRed">#e50000</color>
     <color name="colorRedSelection">#ff4c4c</color>
+
+    <!-- === Home ==== -->
+    <color name="viewBg">#f1f5f8</color>
 </resources>
