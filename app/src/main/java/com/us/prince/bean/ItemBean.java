@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 
 public class ItemBean implements Serializable {
-    public int id;
+    public String id;
     public String itemName;
     public String itemDescription;
     public ArrayList<ItemImageBean> itemImageList;

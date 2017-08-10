@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 
 public class UserBean implements Serializable {
-    public int id;
+    public String id;
     public String email;
     public String password;
 }

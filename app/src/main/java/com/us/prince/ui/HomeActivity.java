@@ -16,10 +16,12 @@ import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
 
-import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.us.prince.ItemAdapter;
 import com.us.prince.R;
 import com.us.prince.bean.ItemBean;
+import com.us.prince.bean.UserBean;
 
 import java.util.ArrayList;
 
@@ -31,7 +33,11 @@ public class HomeActivity extends BaseActivity {
 
     private Context context;
 
-    private FirebaseAuth firebaseAuth;
+    //Database
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
+    private DatabaseReference usersDatabaseReference;
+    private DatabaseReference itemsDatabaseReference;
 
     private Toolbar toolbar;
     private CollapsingToolbarLayout collapsingToolbarLayout;
@@ -49,7 +55,8 @@ public class HomeActivity extends BaseActivity {
         findViewById();
         initCollapseToolbar();
         getItemList();
-
+        initDatabase();
+        addData();
     }
 
     @Override
@@ -261,4 +268,56 @@ public class HomeActivity extends BaseActivity {
 
         return itemBeanArrayList;
     }
+
+    private void initDatabase() {
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference();
+        usersDatabaseReference = databaseReference.child("users");
+        itemsDatabaseReference = databaseReference.child("items");
+    }
+
+    public UserBean createUser() {
+        System.out.println("=============createUser== ");
+
+        UserBean userBean = new UserBean();
+        userBean.email = "upendrashah47@gmail.com";
+        userBean.password = "12345678";
+
+        return userBean;
+    }
+
+    public ArrayList<ItemBean> createItemList() {
+
+        ArrayList<ItemBean> itemBeanArrayList = new ArrayList<>();
+        ItemBean itemBean;
+
+        itemBean = new ItemBean();
+        itemBean.itemName = "1";
+        itemBean.itemDescription = "23.1111111111";
+        itemBeanArrayList.add(itemBean);
+
+        itemBean = new ItemBean();
+        itemBean.itemName = "1";
+        itemBean.itemDescription = "23.1111111111";
+        itemBeanArrayList.add(itemBean);
+
+        return itemBeanArrayList;
+    }
+
+    public void addData() {
+
+        UserBean userBean = createUser();
+        String userId = usersDatabaseReference.push().getKey();
+        userBean.id = userId;
+        usersDatabaseReference.child(userBean.id).setValue(userBean);
+
+        for (ItemBean itemBean : createItemList()) {
+            String itemId = itemsDatabaseReference.push().getKey();
+            itemBean.id = itemId;
+            itemsDatabaseReference.child(itemId).setValue(itemBean);
+        }
+
+    }
+
 }
