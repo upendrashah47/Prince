@@ -1,6 +1,7 @@
 package com.us.prince.util;
 
 import android.app.Activity;
+import android.os.Environment;
 
 import java.util.HashMap;
 
@@ -19,6 +20,40 @@ public class Config {
     public static int TIMEOUT_SOCKET = 60000;
     // 1 = Android, 2 = Ios
     public static int DEVICE_TYPE = 1;
+
+
+    // Create a directory in SD CARD
+    public static String APP_HOME = Environment.getExternalStorageDirectory().getPath() + "/" + TAG;
+    // A directory to store logs
+    public static String DIR_LOG = APP_HOME + "/log";
+    // preference file name
+    public static String DIR_USERDATA = APP_HOME + "/userdata";
+
+
+    // API BASIC INFO
+
+    public static final String API_KEY = "ZEBRA_2016";
+    public static final String API_HEADER = "AUTH-KEY:" + API_KEY;
+    public static final String API_VERSION = "v1";
+
+
+    // LOCAL
+    public static String HOST = "http://192.168.1.42/work/zebra";
+    // Live
+    //public static String HOST = "http://zebra.esprit-apps.com";
+    public static String HOST_IMAGE = HOST + "/public/media/";
+    public static String IMAGE_PATH_WEB_AVATARS = HOST_IMAGE + "avatar/";
+    public static String IMAGE_PATH_WEB_WALLPAPERS = HOST_IMAGE + "wallpaper/";
+    public static String IMAGE_PATH_WEB_BANNER = HOST_IMAGE + "banner/";
+    public static String IMAGE_PATH_ICON = HOST_IMAGE + "feed_style/";
+
+    public static String HOST_URL = HOST + "/api/" + API_VERSION;
+
+    //for login
+    public static final String API_LOGIN = "/users/login";
+    public static String TAG_LOGIN = "TAG_LOGIN";
+
+
     /*
      * Activity and internet dialog operation
      * variable define here.

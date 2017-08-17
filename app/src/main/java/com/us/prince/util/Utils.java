@@ -15,6 +15,7 @@ import android.provider.Settings;
 import android.util.Patterns;
 import android.webkit.URLUtil;
 
+import com.jakewharton.retrofit.Ok3Client;
 import com.us.prince.R;
 import com.us.prince.uc.AlertDailogView;
 
@@ -27,7 +28,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
+
+import okhttp3.OkHttpClient;
+import retrofit.RestAdapter;
 
 public class Utils {
     /**
@@ -429,5 +434,12 @@ public class Utils {
 
     public static boolean isValid(String urlString) {
         return URLUtil.isValidUrl(urlString) && Patterns.WEB_URL.matcher(urlString).matches();
+    }
+
+    public static RestAdapter getAdapter() {
+        OkHttpClient.Builder httpBuilder = new OkHttpClient.Builder();
+        httpBuilder.connectTimeout(120, TimeUnit.SECONDS);
+        OkHttpClient client = httpBuilder.build();
+        return new RestAdapter.Builder().setClient(new Ok3Client(client)).setEndpoint(Config.HOST_URL).build();
     }
 }
